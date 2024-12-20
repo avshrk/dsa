@@ -1,14 +1,12 @@
 
 def circle_game(f, c):
 
-    fl = [i for i in range(1,f + 1)]
-    start = 0
+    fl = [i + 1 for i in range(f)]
+    idx = 0
 
     while len(fl) > 1:
-        start += c - 1
-        if len(fl) <= start:
-            start %= len(fl)
-        del fl[start]
+        idx = (idx + c - 1) % len(fl)
+        del fl[idx]
 
     return fl[0]
 
