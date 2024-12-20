@@ -13,7 +13,5 @@ def circle_game(f, c):
     return fl[0]
 
 if __name__ == '__main__':
-    print(circle_game(5,2))
     assert circle_game(5,2) == 3
-    print(circle_game(6,5))
     assert circle_game(6,5) == 1
